@@ -3,6 +3,7 @@ import FormA from "./forms/FormA";
 import FormB from "./forms/FormB";
 import FormC from "./forms/FormC";
 import FormD from "./forms/FormD";
+import FormE from "./forms/FormE";
 
 function App() {
 
@@ -10,19 +11,24 @@ function App() {
     <div className="App">
       <h1>double setState and asynchrony problem</h1>
       <h2>FormA</h2>
-      <p>Functional Component | Double state</p>
+      <p>Functional Component | Double setState</p>
       <FormA></FormA>
       <h2>FormB</h2>
-      <p>Functional Component | one state</p>
+      <p>Functional Component | one setState</p>
       <FormB></FormB>
       <div className="danger">
         <h2>FormC</h2>
-        <p>Functional Component | one state | 5 maneras donde NO FUNCIONA</p>
+        <p>Functional Component | one setState | 5 maneras donde NO FUNCIONA</p>
         <FormC></FormC>
       </div>
       <h2>FormD</h2>
       <p>Class Component | one state</p>
       <FormD></FormD>
+      <div className="danger">
+        <h2>FormE</h2>
+        <p>Functional Component | double setState | double cb in c/state</p>
+        <FormE></FormE>
+      </div>
 
       <p className="read-the-docs">
         Handling two concurrent setStates taking the name and value of the
